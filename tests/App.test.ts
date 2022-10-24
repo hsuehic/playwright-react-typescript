@@ -19,9 +19,9 @@ test('Basic Test', async ({ page }) => {
  
 });
 
-test('Basic Test1', async ({ page }) => {
+// test('Basic Test1', async ({ page }) => {
 
-});
+// });
 
 // test('use Turquoise as a default background color', async ({ page }) => {
 //   await page.waitForSelector("text=#1abc9c")
