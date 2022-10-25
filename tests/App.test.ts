@@ -19,16 +19,17 @@ test('Basic Test', async ({ page }) => {
  
 });
 
-test('Basic Test1', async ({ page }) => {
-
+test('use Turquoise as a default background color', async ({ page }) => {
+  await page.click("text=Turquoise")
+  await page.waitForSelector("text=#1abc9c")
 });
 
-// test('use Turquoise as a default background color', async ({ page }) => {
-//   await page.waitForSelector("text=#1abc9c")
-// });
+test('use Red as a background color', async ({ page }) => {
+  await page.click("text=Red")
+  await page.waitForSelector("text=#e74c3c")
+});
 
-
-// test('use Red as a background color', async ({ page }) => {
-//   await page.click("text=Red")
-//   await page.waitForSelector("text=#e74c3c")
-// });
+test('use Yellow as a default background color', async ({ page }) => {
+  await page.click("text=Yellow")
+  await page.waitForSelector("text=#f1c40f")
+});

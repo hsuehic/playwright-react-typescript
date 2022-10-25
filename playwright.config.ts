@@ -31,7 +31,7 @@ const config: PlaywrightTestConfig = {
         // - or if you're running into any of the other many reasons people have for excluding files
         exclude: ['*.css', '*.svg', '*.test.tsx', 'setupTests.ts', 'reportWebVitals.ts'],
         // Directory in which to write coverage reports
-        resultDir: path.join(__dirname, 'coverage'),
+        resultDir: path.join(__dirname, 'playwright-report/coverage'),
         // Configure the reports to generate.
         // The value is an array of istanbul reports, with optional configuration attached.
         reports: [
